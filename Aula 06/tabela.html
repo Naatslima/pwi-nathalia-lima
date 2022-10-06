@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px 10px 15px 20px;
+}
+th:nth-child(odd) {
+  background: red;
+}
+td:nth-child(even){
+    background-color: aqua;
+}
+
+</style>
+<body>
+<h2>A basic HTML table</h2>
+
+<table style="width:50%">
+    <caption>Monthly savings</caption>
+
+  <tr>
+    <th rowspan="2">Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+    
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td colspan="2">Maria Anders</td>
+    
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Dinamarca</td>
+  </tr>
+</table>
+
+<p>To understand the example better, we have added borders to the table.</p>
+
+</body>
+</html>
