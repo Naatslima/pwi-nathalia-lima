@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <head>
+        <style>
+            body {
+                background-color: rgb(243, 212, 172);
+                font-size: small;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
 
-<h1>Quantas letras tem o seu nome?</h1>
-<h2>O meu nome é: Nathalia Xavier de Lima</h2>
+        <h1 style="color: rgb(203, 110, 206); outline-style: dashed;">Quantas letras tem o seu nome?</h1>
+        <h2 style="font-family: cursive;">O meu nome é: Nathalia Xavier de Lima</h2>
 
-<p>O meu nome tem:</p>
-<p id="demo"></p>
+        <p style="outline-style: groove; border-radius: 10px; outline-width: 10px; outline: thick ridge pink; font-size: 20px;">O meu nome tem:</p>
+        <p id="demo" style="font-size: 20px;"></p>
 
-<script>
-let text = "Nathalia Xavier de Lima";
-document.getElementById("demo").innerHTML = text.length;
-</script>
+        <script>
+            let text = "Nathalia Xavier de Lima";
+            document.getElementById("demo").innerHTML = text.length;
+        </script>
 
-</body>
+    </body>
 </html>

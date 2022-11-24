@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: rgb(243, 212, 172);
+                font-size: small;
+                text-align: center;
+            }
+            .bloco1{
+                width: 400px;
+                height: 100px;
+                border: 5px rgb(203, 110, 206) groove;
+                margin: 10px auto;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1 style="color: rgb(203, 110, 206); outline-style: dashed;">Você gosta de cães ou gatos ?</h1>
+
+        <div class="bloco1">
+        <p style="font-family: cursive; font-size: 20px; text-decoration: underline ;">Qual pet você prefere ?</p>
+        <p id="demo" style="font-size: 20px;"></p>
+        </div>
+
+        <script>
+            let text = " Eu adoro gatos" 
+            text = text.replaceAll("gatos", "cães");
+            
+            let text2 = ", mas amo muito os cães."
+            text2 = text2.replaceAll("cães", "gatos");
+
+            document.getElementById("demo").innerHTML = text + text2;
+        </script>
+
+    </body>
+</html>

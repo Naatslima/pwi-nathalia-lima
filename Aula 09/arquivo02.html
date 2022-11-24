@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <head>
+        <style>
+            body {
+                background-color: rgb(243, 212, 172);
+                font-size: small;
+                text-align: center;
+            }
+            .bloco1 {
+                width: 300px;
+                height: 100px;
+                border: rgb(203, 110, 206) groove 5px;
+                margin: 10px auto;
+            }
+        </style>
+    </head>
+    <body>
 
-<h1>Qual seu ultimo sobrenome!?</h1>
-<h2>O meu nome é: Nathalia Xavier de Lima</h2>
+        <h1 style="color: rgb(203, 110, 206); outline-style: dashed;">Qual seu ultimo sobrenome!?</h1>
+        <h2 style="font-family: cursive;">O meu nome é: Nathalia Xavier de Lima</h2>
 
-<p>O meu ultimo sobrenome é ?</p>
-<p id="demo"></p>
+        <div class="bloco1">
+            <p style="font-family: cursive; text-decoration: underline; font-size: 20px; ">O meu ultimo sobrenome é ?</p>
+            <p id="demo" style="font-size: 20px;"></p>
+        </div>
 
-<script>
-let text = "Nathalia Xavier de Lima";
-let part = text.slice(19,24);
-document.getElementById("demo").innerHTML = part; 
-</script>
+        <script>
+            let text = "Nathalia Xavier de Lima";
+            let part = text.slice(19, 24);
+            document.getElementById("demo").innerHTML = part;
+        </script>
 
-</body>
+    </body>
 </html>

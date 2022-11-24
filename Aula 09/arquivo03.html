@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <head>
+        <style>
+            body {
+                background-color: rgb(243, 212, 172);
+                font-size: small;
+                text-align: center;
+            }
 
-<h1>Qual o plural de carro ?</h1>
-<p>O plural de carro é: </p>
+            .bloco1 {
+                width: 300px;
+                height: 100px;
+                border: 10px rgb(203, 110, 206) groove;
+                margin: 10px auto;
+            }
+        </style>
+    </head>
+    <body>
 
-<p id="demo"></p>
+        <h1 style="color: rgb(203, 110, 206); outline-style: dashed;">Qual o plural de carro ?</h1>
 
-<script>
-let text = "Carro";
-document.getElementById("demo").innerHTML = text.padEnd(6,"s");
-</script>
+        <div class="bloco1">
+            <p style="font-family: cursive; text-decoration: underline; font-size: 20px;">O plural de carro é:</p>
 
-</body>
+            <p id="demo" style="font-size: 20px;"></p>
+        </div>
+
+        <script>
+            let text = "Carro";
+            document.getElementById("demo").innerHTML = text.padEnd(6, "s");
+        </script>
+
+    </body>
 </html>
